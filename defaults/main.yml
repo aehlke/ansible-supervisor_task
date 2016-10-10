@@ -10,7 +10,7 @@ restart_pidfile: null
 
 # supervisor tasks config
 
-redirect_stderr: "true"
+redirect_stderr: "false"
 autorestart: "true"
 autostart: "true"
 env_vars: {}
