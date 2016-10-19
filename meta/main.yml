@@ -1,5 +1,7 @@
 ---
 
+allow_duplicates: yes
+
 galaxy_info:
   author: EDITD devs
   description: A role for creating supervisor tasks
