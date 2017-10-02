@@ -17,3 +17,9 @@ env_vars: {}
 numprocs: 1
 process_name: "%(program_name)s_%(process_num)02d"
 state: "present"
+
+# Logging
+stdout_logfile_maxbytes: '50MB'
+stdout_logfile_backups: 10
+stderr_logfile_maxbytes: '50MB'
+stderr_logfile_backups: 10

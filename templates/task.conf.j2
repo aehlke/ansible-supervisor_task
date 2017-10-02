@@ -27,3 +27,8 @@ stderr_logfile={{ stderr_logfile }}
 {% else %}
 stderr_logfile=/var/log/supervisor/{{ process_name }}_stderr.log
 {% endif %}
+
+stdout_logfile_maxbytes={{ stderr_logfile_maxbytes }}
+stdout_logfile_backups={{ stdout_logfile_backups }}
+stderr_logfile_maxbytes={{ stderr_logfile_maxbytes }}
+stderr_logfile_backups={{ stderr_logfile_backups }}
