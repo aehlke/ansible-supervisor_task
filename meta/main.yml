@@ -7,7 +7,7 @@ galaxy_info:
   description: A role for creating supervisor tasks
   company: EDITD
   license: MIT
-  min_ansible_version: 1.4
+  min_ansible_version: 2.4
   platforms:
   - name: Ubuntu
     versions:
