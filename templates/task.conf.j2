@@ -11,7 +11,7 @@ autostart={{ autostart }}
 autorestart={{ autorestart }}
 user={{ user }}
 numprocs={{ numprocs }}
-environment={% if 'USER' not in env_vars %}USER="{{ user }}",{% endif %}{% if 'HOME' not in env_vars %}HOME="/home/{{ user }}",{% endif %}{% for name, value in env_vars.iteritems() %}{{ name }}="{{ value }}",{% endfor %}
+environment={% if 'USER' not in env_vars %}USER="{{ user }}",{% endif %}{% if 'HOME' not in env_vars %}HOME="/home/{{ user }}",{% endif %}{% for name, value in env_vars.items() %}{{ name }}="{{ value }}",{% endfor %}
 {% if stopsignal is defined %}
 stopsignal={{ stopsignal }}
 {% endif %}
